@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    
+}
+
+.header {
+    height: 920px;
+    background: url("alfiano-sutianto-exFdOWkYBQw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text_header {
+    text-align: center;
+}
+
+.text-header {
+    font-size: 100px;
+    padding-top: 300px;
+    color: #fff;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Vollkorn', serif; 
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.description-header {
+    color: #ffffff;
+    padding-top: -30px;
+}
+
+.explore-btn {
+    margin-top: 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+    background-color: #3498db; 
+    color: #ffffff; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+
+  .explore-btn:hover {
+    background-color: #1a5176; 
+    color: #fff; 
+  }
+
+.mynavbar{
+    position: fixed;
+}
+
+.deskripsi img {
+    position: absolute;
+    /* padding: 320px 960px; */
+
+}
+
+.image-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
+}
+
+.image-wrapper img {
+    transition: box-shadow 0.3s ease; /* Animasi bayangan saat hover */
+}
+
+/* Efek bayangan saat hover */
+.image-wrapper:hover img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Bayangan hitam transparan */
+    cursor: pointer; /* Ubah kursor saat hover */
+}
+
+.deskripsi p{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.deskripsi h3 {
+    /* margin-top: 400px; */
+    /* margin-left: 50px; */
+}
+
+.div-title-dan-p {
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+.navbar {
+    background: #04364A;
+    padding: 15px 15px 15px 30px;
+    border-radius: 50px;
+    margin: 10px 20px;
+    box-shadow: 0px 0px 6px 0px #00000021;
+    position: fixed;
+    width: 97.5%;
+    }
+    .navbar-nav{
+        padding-left: 30px;
+    }
+    .nav-link{
+        color: #ffffff;
+    }
+    .navbar-brand {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .navbar-toggler{
+        color: #ffffff;
+    }
+    .navbar-toggler-icon{
+        color: #ffffff;
+    }

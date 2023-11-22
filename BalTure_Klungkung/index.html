@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Vollkorn&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BalTure</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#karangasem">Tentang</a>
+              <a class="nav-link" href="#">Budaya</a>
+              <a class="nav-link" href="#">Destinasi</a>
+              <a class="nav-link" href="#">Kuliner</a>
+              <a class="nav-link" href="#">Kesenian</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+</nav>
+    <div class="header">
+        <div class="text_header">
+            <p class="text-header">Culture of Klungkung</p>
+            <h5 class="description-header">sebuah kabupaten yang memiliki bermacam budaya yang bisa dijelajahi</h5>
+            <button  id="scrollButton" class="explore-btn">Explore</button>
+            <script>
+          
+                var scrollButton = document.getElementById('scrollButton');
+                var targetElement = document.querySelector('p');
+                
+                scrollButton.addEventListener('click', function() {
+                 
+                  window.scroll({
+                        top: 1000,
+                        behavior: 'smooth' 
+                  })
+                });
+                </script>
+        </div>
+        <!-- <img src="alfiano-sutianto-exFdOWkYBQw-unsplash.jpg" alt="" class="bg-img"> -->
+    </div>
+
+    <div class="deskripsi">
+        <div class="image-wrapper">
+            <div class="div-title-dan-p">
+                <h3>Kabupaten Klungkung</h3>
+                <p>Klungkung terletak di bagian timur Pulau Bali, berbatasan langsung dengan Kabupaten Karangasem di sebelah timur. <br>Klungkung adalah perpaduan memukau antara keindahan alam tropis, warisan budaya yang kaya, dan warisan <br>sejarah yang memikat.Dikenal sebagai tempat yang menyimpan harta karun seni dan tradisi, Klungkung mengundang <br>dengan keelokan destinasi wisata yang meliputi pura-pura megah, pantai pasir putih yang menenangkan, <br>serta kehidupan budaya yang autentik dan mempesona. </p>
+            </div>
+            <a href="#" target="_blank" id="image-link" >
+                <img src="Bali-removebg-preview.png" alt="Deskripsi Gambar">
+            </a>
+        </div>
+        <script>
+            document.getElementById('image-link').addEventListener('click', function() {
+            window.location.href = 'https://maps.app.goo.gl/9Na3DRViJRLFTbwo7';
+            });
+
+        </script>
+        
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
