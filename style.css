@@ -1,14 +1,26 @@
-body {
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Poppins:wght@100;500&family=Vollkorn&display=swap');
+
+  body {
     margin: 0px;
-    
+    background-color: #265f85;
+    scroll-behavior: smooth;
 }
 
 .header {
-    height: 920px;
+    height: 815px;
     background: url("alfiano-sutianto-exFdOWkYBQw-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top,#265f85,transparent);
+    z-index: 1;
 }
 .text_header {
     text-align: center;
@@ -40,21 +52,84 @@ body {
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
 
   .explore-btn:hover {
     background-color: #1a5176; 
+    border: 1px solid #15405e;
     color: #fff; 
   }
 
 .mynavbar{
     position: fixed;
+    z-index: 3;
+}
+
+.about {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 2vw;
+    /* margin-left: 50px; */
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 300px;
+    background-color: #fff;
+    padding-bottom: 25px;
+    box-shadow: -50px 0px 20px black;
+
+}
+
+.Budaya {
+    border-radius: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Budaya:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+}
+
+.Destinasi {
+    border-radius: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.Destinasi:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+}
+
+.Kuliner {
+    border-radius: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Kuliner:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+}
+
+.seni {
+    border-radius: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.seni:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
 }
 
 .deskripsi img {
-    position: absolute;
+    /* position: absolute; */
     /* padding: 320px 960px; */
+    margin-top: 200px;
 
 }
 
@@ -67,29 +142,28 @@ body {
     display: flex;
 }
 
-.image-wrapper img {
-    transition: box-shadow 0.3s ease; /* Animasi bayangan saat hover */
-}
 
-/* Efek bayangan saat hover */
-.image-wrapper:hover img {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Bayangan hitam transparan */
-    cursor: pointer; /* Ubah kursor saat hover */
-}
-
-.deskripsi p{
-    margin-top: 20px;
-    margin-left: 50px;
-}
-.deskripsi h3 {
-    /* margin-top: 400px; */
-    /* margin-left: 50px; */
-}
-
-.div-title-dan-p {
+#tentang-kami {
+    padding-top: 260px;
+  }
+  #tentang-kami .tentang-kami-frame {
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 700px;
+    margin: 50px;
+    background: #e9f8f6;
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-}
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+
+  #tentang-kami .tentang-kami-frame .tentang-kami-text {
+    padding: 20px;
+  }
+ 
 
 /* title */
 .navbar {
@@ -97,9 +171,10 @@ body {
     padding: 15px 15px 15px 30px;
     border-radius: 50px;
     margin: 10px 20px;
-    box-shadow: 0px 0px 6px 0px #00000021;
+    box-shadow: 0px 0px 6px 0px #000000;
     position: fixed;
     width: 97.5%;
+    z-index: 3;
     }
     .navbar-nav{
         padding-left: 30px;
@@ -117,3 +192,319 @@ body {
     .navbar-toggler-icon{
         color: #ffffff;
     }
+
+    .navbar-nav a {
+        padding: 2px 0px;
+        transition: all;
+        transition-duration: 300ms;
+        border-bottom: 2px solid transparent;
+    }
+
+    .navbar-nav a:hover {
+        color: #77ACF1;
+        border-bottom: 2px solid #689bdf;
+        
+    }
+
+    #t-klungkung {
+        padding-top: 80px;
+      }
+      #t-klungkung .t-klungkung-frame {
+        font-family: 'Poppins';
+        font-weight: 10px;
+        
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 700px;
+        margin: 160px;
+        background: #e9f8f6;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-klungkung .t-klungkung-frame .t-klungkung-text {
+        padding: 20px;
+      }
+
+      .isi img {
+
+      }
+
+      #t-Baris {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      #t-Baris .t-Baris-frame {
+        font-family: 'Poppins';
+        border-radius: 20px;
+        overflow: hidden;
+        /* max-width: 700px; */
+        /* margin: 160px; */
+        background: #e9f8f6;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-Baris .t-Baris-frame .t-Baris-text {
+        padding: 20px;
+      }
+
+      .isi {
+        display: flex;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-top: 300px;
+        /* border: 4px;
+        background-color: #ffffff; */
+    }
+
+      .baris {
+        margin-top: 58px;
+        padding: 30px;
+        width: 40%;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #ffffff;
+      }
+
+
+
+      #t-masraman {
+        padding-top: 100px;
+        padding-left: 30pxpx;
+        padding-right: 30px;
+      }
+
+      .t-masraman-frame {
+        display: flex;
+      }
+      #t-masraman .t-masraman-frame {
+        font-family: 'Poppins';
+        border-radius: 20px;
+        overflow: hidden;
+        /* width: 300px; */
+        /* margin: 160px; */
+        background: #e9f8f6;
+        margin-top: 10px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-masraman .t-masraman-frame .t-masraman-text {
+        padding: 20px;
+      }
+
+      .budaya2 {
+        display: flex;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-top: 20px;
+        /* border: 4px;
+        background-color: #ffffff; */
+    }
+
+      .masraman {
+        margin-top: 10px;
+        padding: 30px;
+        width: 40%;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #ffffff;
+      }
+
+
+
+      #t-nusa2 {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      #t-nusa2 .t-nusa2-frame {
+        font-family: 'Poppins';
+        border-radius: 20px;
+        overflow: hidden;
+        /* max-width: 700px; */
+        /* margin: 160px; */
+        background: #e9f8f6;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-nusa2 .t-nusa2-frame .t-nusa2-text {
+        padding: 20px;
+      }
+
+      .destinasi {
+        display: flex;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-top: 300px;
+        /* border: 4px;
+        background-color: #ffffff; */
+    }
+
+      .nusa2 {
+        margin-top: 58px;
+        padding: 30px;
+        width: 40%;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #ffffff;
+      }
+
+
+
+      #t-smarapura {
+        padding-top: 100px;
+        padding-left: 30pxpx;
+        padding-right: 30px;
+      }
+
+      .t-smarapura-frame {
+        display: flex;
+      }
+      #t-smarapura .t-smarapura-frame {
+        font-family: 'Poppins';
+        border-radius: 20px;
+        overflow: hidden;
+        /* width: 300px; */
+        /* margin: 160px; */
+        background: #e9f8f6;
+        margin-top: 10px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-smarapura .t-smarapura-frame .t-smarapura-text {
+        padding: 20px;
+      }
+
+      .destinasi2 {
+        display: flex;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-top: 20px;
+        /* border: 4px;
+        background-color: #ffffff; */
+    }
+
+      .smarapura {
+        margin-top: 10px;
+        padding: 30px;
+        width: 40%;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #ffffff;
+      }
+
+
+      
+
+      #t-mie {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      #t-mie .t-mie-frame {
+        font-family: 'Poppins';
+        border-radius: 20px;
+        overflow: hidden;
+        /* max-width: 700px; */
+        /* margin: 160px; */
+        background: #e9f8f6;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-mie .t-mie-frame .t-mie-text {
+        padding: 20px;
+      }
+
+      .kuliner {
+        display: flex;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-top: 300px;
+        /* border: 4px;
+        background-color: #ffffff; */
+    }
+
+      .mie {
+        margin-top: 58px;
+        padding: 30px;
+        width: 40%;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #ffffff;
+      }
+
+
+
+      #t-godel {
+        padding-top: 100px;
+        padding-left: 30pxpx;
+        padding-right: 30px;
+      }
+
+      .t-godel-frame {
+        display: flex;
+      }
+      #t-godel .t-godel-frame {
+        font-family: 'Poppins';
+        border-radius: 20px;
+        overflow: hidden;
+        /* width: 300px; */
+        /* margin: 160px; */
+        background: #e9f8f6;
+        margin-top: 10px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0px 10px 10px 0px #000000;
+      }
+    
+      #t-godel .t-godel-frame .t-godel-text {
+        padding: 20px;
+      }
+
+      .kuliner2 {
+        display: flex;
+        padding-left: 50px;
+        padding-top: 50px;
+        margin-top: 20px;
+        /* border: 4px;
+        background-color: #ffffff; */
+    }
+
+      .godel {
+        margin-top: 10px;
+        padding: 30px;
+        width: 40%;
+        border: 1px;
+        border-radius: 20px;
+        background-color: #ffffff;
+      }
